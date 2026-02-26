@@ -1,0 +1,17 @@
+body { 
+    background-color: #f0f4f8; 
+}
+.header-text { 
+    text-align: center; 
+    margin-bottom: 10px; 
+}
+.header-text h1 { 
+    color: #0f766e; 
+    font-weight: 700; 
+}
+.trigger-box textarea { 
+    color: #b91c1c !important; 
+    font-weight: bold; 
+    background-color: #fef2f2 !important; 
+    border: 1px solid #f87171 !important;
+}

@@ -1,0 +1,14 @@
+# Private keys
+.env
+
+# Virtual environment
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS specific files
+.DS_Store
+Thumbs.db

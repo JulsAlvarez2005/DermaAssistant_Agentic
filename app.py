@@ -193,7 +193,7 @@ body { background-color: #f0f4f8; }
 
 with gr.Blocks(theme=gr.themes.Soft(primary_hue="teal", neutral_hue="slate"), css=custom_css, title="Derma-Agent") as app:
     with gr.Column(elem_classes="header-text"):
-        gr.Markdown("# 🩺 Derma-Agent AI")
+        gr.Markdown("# 🩺 Derma Companion")
         gr.Markdown("### Symptom Triage & Hazard Detection")
         gr.Markdown("---")
     
@@ -205,8 +205,16 @@ with gr.Blocks(theme=gr.themes.Soft(primary_hue="teal", neutral_hue="slate"), cs
             chatbot = gr.ChatInterface(
                 fn=doctor_agent,
                 additional_inputs=[img_input],
-                description="**Step 1:** Describe your skin condition below.\n**Step 2:** Upload a product label on the right to scan for triggers.",
+                description="**Step 1:** Describe your skin condition below.\n **Step 2:** Upload a product label on the right to scan for triggers.",
                 examples=[["I have Rosacea and sensitive skin. What should I look out for?", None]]
+            )
+            # Disclaimer
+            gr.HTML(
+                """
+                <p style='text-align: center; font-size: 12px; color: #888888; margin-top: 10px;'>
+                ⚠️ <b>Disclaimer:</b> Derma-Agent is an AI tool and can make mistakes. It is designed for informational triage and educational purposes only. Always verify ingredient safety and consult a licensed dermatologist or healthcare provider before making medical decisions.
+                </p>
+                """
             )
             
         #Right Panel: Smart Scanner
@@ -237,3 +245,4 @@ with gr.Blocks(theme=gr.themes.Soft(primary_hue="teal", neutral_hue="slate"), cs
 
 # NOTE: share=False for local development is usually faster.
 app.launch(share=False, debug=True)
+#.\venv\Scripts\activate

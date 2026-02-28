@@ -2,6 +2,9 @@
 
 An intelligent medical triage system that combines **Computer Vision (OCR)** and **Retrieval-Augmented Generation (RAG)** to identify skin irritants and provide clinical context.
 
+<img width="1899" height="946" alt="image" src="https://github.com/user-attachments/assets/29076a74-5d61-49bf-8285-0ef8e0fb2364" />
+
+
 ## 🚀 Key Features
 * **Agentic Reasoning:** Powered by Llama-3.3-70B via Groq for step-by-step triage.
 * **RAG Architecture:** Uses FAISS and HuggingFace Embeddings for high-accuracy medical document retrieval.
